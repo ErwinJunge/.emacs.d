@@ -46,6 +46,7 @@
 ;; https://github.com/bbatsov/zenburn-emacs
 (load-theme 'zenburn t)
 (set-cursor-color "firebrick")
+(set-face-attribute 'default nil :height 100)
 
 ;; Don't show startup screen
 (setq inhibit-startup-screen t)

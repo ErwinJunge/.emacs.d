@@ -29,6 +29,9 @@
        (concat "/sudo:root@localhost:" (buffer-file-name))))
     (goto-char position)))
 
+;; Turn off toolbar
+(tool-bar-mode -1)
+
 ;; Elpy
 (elpy-enable)
 (elpy-use-ipython)

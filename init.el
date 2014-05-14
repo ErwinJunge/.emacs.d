@@ -8,6 +8,9 @@
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
 
+;; Delete selection mode
+(delete-selection-mode 1)
+
 ;; Elpy
 (elpy-enable)
 (elpy-use-ipython)

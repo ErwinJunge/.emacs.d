@@ -5,11 +5,9 @@
 
 (depends-on "cask")
 (depends-on "magit")
-(depends-on "jedi")
+(depends-on "elpy")
 (depends-on "zenburn-theme")
 (depends-on "web-mode")
-(depends-on "virtualenvwrapper")
-(depends-on "pony-mode")
 (depends-on "graphviz-dot-mode")
 (depends-on "fold-dwim")
 (depends-on "sass-mode")

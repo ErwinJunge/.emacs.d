@@ -8,10 +8,10 @@
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
 
-;; Auto-completion
-(add-hook 'python-mode-hook 'jedi:setup)
-(setq jedi:setup-keys t)                      ; optional
-(setq jedi:complete-on-dot t)                 ; optional
+;; Elpy
+(elpy-enable)
+(elpy-use-ipython)
+(elpy-clean-modeline)
 
 ;; Git
 (require 'magit)
@@ -34,20 +34,6 @@
 )
 (setq web-mode-markup-indent-offset 4)
 
-;; Virtualenv support
-(require 'virtualenvwrapper)
-(venv-initialize-interactive-shells) ;; if you want interactive shell support
-(venv-initialize-eshell) ;; if you want eshell support
-(setq venv-location "~/.virtualenvs")
-(add-hook 'python-mode-hook (lambda ()
-      (hack-local-variables)
-      (venv-workon project-venv-name)))
-
-;; Django mode
-(require 'pony-mode)
-(eval-after-load 'pony-mode
-  (progn '(global-set-key (kbd "M-.") 'pony-goto-template)))
-
 ;; I hate tabs!
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
@@ -63,23 +49,6 @@
 
 ;; Folding
 (require 'fold-dwim)
-
-;; Syntax highlighting
-(add-hook 'find-file-hook 'flymake-find-file-hook)
-(when (load "flymake" t)
-  (defun flymake-pyflakes-init ()
-    (let* ((temp-file (flymake-init-create-temp-buffer-copy
-                       'flymake-create-temp-inplace))
-           (local-file (file-relative-name temp-file
-                                           (file-name-directory buffer-file-name))))
-      (list "pycheckers"  (list local-file))))
-  (add-to-list 'flymake-allowed-file-name-masks
-               '("\\.py\\'" flymake-pyflakes-init)))
-(global-set-key [f10] 'flymake-goto-prev-error)
-(global-set-key [f11] 'flymake-goto-next-error)
-
-;; Remove html from flymake to silence error
-(delete '("\\.html?\\'" flymake-xml-init) flymake-allowed-file-name-masks)
 
 ;; Sass
 (require 'sass-mode)

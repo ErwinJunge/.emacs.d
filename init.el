@@ -8,6 +8,9 @@
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
 
+;; Quack (racket)
+(require 'quack)
+
 ;; Delete selection mode
 (delete-selection-mode 1)
 

@@ -11,3 +11,4 @@
 (depends-on "graphviz-dot-mode")
 (depends-on "fold-dwim")
 (depends-on "sass-mode")
+(depends-on "quack")

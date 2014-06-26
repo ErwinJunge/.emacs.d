@@ -12,3 +12,4 @@
 (depends-on "fold-dwim")
 (depends-on "sass-mode")
 (depends-on "quack")
+(depends-on "php-mode")

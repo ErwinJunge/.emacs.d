@@ -39,6 +39,7 @@
 (elpy-enable)
 (elpy-use-ipython)
 (elpy-clean-modeline)
+(setq elpy-rpc--timeout 10)
 
 ;; Git
 (require 'magit)

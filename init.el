@@ -106,6 +106,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes (quote ("cd70962b469931807533f5ab78293e901253f5eeb133a46c2965359f23bfb2ea" "11d069fbfb0510e2b32a5787e26b762898c7e480364cbc0779fe841662e4cf5d" default)))
+ '(elpy-rpc-timeout 10)
  '(fci-rule-color "#383838")
  '(safe-local-variable-values (quote ((project-venv-name . "bacchi") (project-venv-name . "beebox") (project-venv-name . "qollap") (project-venv-name . "openict-erp"))))
  '(vc-annotate-background "#2B2B2B")

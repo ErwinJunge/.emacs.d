@@ -1,6 +1,6 @@
 ;; /This/ file (~init.el~) that you are reading
 ;; should be in this folder
-(add-to-list 'load-path "~/.emacs.d/")
+(add-to-list 'load-path "~/.emacs.d/.cask")
 
 ;; Package Manager
 ;; See ~Cask~ file for its configuration

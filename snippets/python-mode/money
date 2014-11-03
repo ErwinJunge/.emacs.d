@@ -7,4 +7,6 @@ MoneyField(
 verbose_name='$0',
 blank=True,
 null=True,
+max_digits=20,
+decimal_places=2,
 )

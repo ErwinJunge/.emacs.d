@@ -1,0 +1,8 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: denormalized-money-field
+# key: dmoney
+# binding: direct-keybinding
+# --
+@denormalized(MoneyField, blank=True, null=True, max_digits=20, decimal_places=2)
+    def $1(self):
+        $0

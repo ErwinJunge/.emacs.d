@@ -1,0 +1,10 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: money-field
+# key: money
+# binding: direct-keybinding
+# --
+MoneyField(
+verbose_name='$0',
+blank=True,
+null=True,
+)

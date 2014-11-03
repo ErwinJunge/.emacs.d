@@ -4,9 +4,9 @@
 # binding: direct-keybinding
 # --
 MoneyField(
-verbose_name='$0',
+verbose_name='$1',
 blank=True,
 null=True,
 max_digits=20,
 decimal_places=2,
-)
+)$0

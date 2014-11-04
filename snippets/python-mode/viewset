@@ -1,0 +1,16 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: django-rest-framework-viewset
+# key: vs
+# binding: direct-keybinding
+# --
+class $1ViewSet(ViewSetMixins, viewsets.ModelViewSet):
+    """
+    This endpoint provides information on $2s.
+    """
+    model = $1
+    serializer_class = $1Serializer
+    list_doc = "List all existing $2s"
+    create_doc = "Create a new $2"
+    retrieve_doc = "Get details for an existing $2"
+    update_doc = "Change details for an existing $2"
+    destroy_doc = "Delete an existing $2"$0

@@ -5,4 +5,8 @@
 # --
 @denormalized(MoneyField, blank=True, null=True, max_digits=20, decimal_places=2)
     def $1(self):
-        $0
+        values = (
+            $2
+        )
+        value = partial_sum(values)
+        return value$0

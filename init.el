@@ -121,6 +121,7 @@
      (project-venv-name . "beebox")
      (project-venv-name . "qollap")
      (project-venv-name . "openict-erp"))))
+ '(show-paren-mode t)
  '(vc-annotate-background "#2B2B2B")
  '(vc-annotate-color-map
    (quote

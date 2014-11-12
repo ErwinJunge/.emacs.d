@@ -122,6 +122,7 @@
      (project-venv-name . "qollap")
      (project-venv-name . "openict-erp"))))
  '(show-paren-mode t)
+ '(tool-bar-mode nil)
  '(vc-annotate-background "#2B2B2B")
  '(vc-annotate-color-map
    (quote

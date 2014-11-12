@@ -1,12 +1,13 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 # name: money-field
-# key: money
+# key: mo
 # binding: direct-keybinding
 # --
-MoneyField(
-verbose_name='$1',
+${1:attribute} = MoneyField(
+verbose_name='$2',
 blank=True,
 null=True,
 max_digits=20,
 decimal_places=2,
-)$0
+)
+$0

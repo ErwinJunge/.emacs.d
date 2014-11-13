@@ -13,3 +13,4 @@
 (depends-on "sass-mode")
 (depends-on "quack")
 (depends-on "php-mode")
+(depends-on "yaml-mode")

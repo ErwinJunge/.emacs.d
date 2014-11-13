@@ -99,6 +99,18 @@
 ;; Org mode
 (setq org-fontify-emphasized-text nil)
 
+;; Save all tempfiles in $TMPDIR/emacs$UID/
+(defconst emacs-tmp-dir (format "%s/%s%s/" temporary-file-directory "emacs" (user-uid)))
+(setq backup-directory-alist
+      `((".*" . ,emacs-tmp-dir)))
+(setq auto-save-file-name-transforms
+      `((".*" ,emacs-tmp-dir t)))
+(setq auto-save-list-file-prefix
+      emacs-tmp-dir)
+
+;; Don't create lockfiles
+(setq create-lockfiles nil)
+
 ;; Custom
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

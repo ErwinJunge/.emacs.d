@@ -123,6 +123,9 @@
   "Major mode for editing Markdown files" t)
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
+;; No bell
+(setq ring-bell-function 'ignore)
+
 ;; Custom
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

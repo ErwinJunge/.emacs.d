@@ -164,6 +164,16 @@
   ;; http://www.mail-archive.com/help-gnu-emacs@gnu.org/msg03577.html
   ))
 
+(require 'virtualenvwrapper)
+(venv-initialize-interactive-shells) ;; if you want interactive shell support
+(venv-initialize-eshell) ;; if you want eshell support
+(setq venv-location "~/.virtualenvs/")
+(add-hook 'python-mode-hook (lambda ()
+                              (hack-local-variables)
+                              (when (boundp 'project-venv-name)
+                                (venv-workon project-venv-name))))
+(setq-default mode-line-format (cons '(:exec venv-current-name) mode-line-format))
+
 ;; Custom
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -182,7 +192,9 @@
     ("SCCS" "RCS" "CVS" "MCVS" ".svn" ".git" ".hg" ".bzr" "_MTN" "_darcs" "{arch}" "migrations")))
  '(safe-local-variable-values
    (quote
-    ((project-venv-name . "bacchi")
+    ((project-venv-name . "heat")
+     (project-venv-name . "scope-backend")
+     (project-venv-name . "bacchi")
      (project-venv-name . "beebox")
      (project-venv-name . "qollap")
      (project-venv-name . "openict-erp"))))

@@ -15,3 +15,4 @@
 (depends-on "php-mode")
 (depends-on "yaml-mode")
 (depends-on "markdown-mode")
+(depends-on "virtualenvwrapper")

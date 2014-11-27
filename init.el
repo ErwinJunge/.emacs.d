@@ -174,6 +174,9 @@
                                 (venv-workon project-venv-name))))
 (setq-default mode-line-format (cons '(:exec venv-current-name) mode-line-format))
 
+;; Horizontal split
+(setq split-width-threshold 130)
+
 ;; Custom
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

@@ -16,3 +16,4 @@
 (depends-on "yaml-mode")
 (depends-on "markdown-mode")
 (depends-on "virtualenvwrapper")
+(depends-on "python-django")

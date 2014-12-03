@@ -177,6 +177,9 @@
 ;; Horizontal split
 (setq split-width-threshold 130)
 
+;; Django
+(require 'python-django)
+
 ;; Custom
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

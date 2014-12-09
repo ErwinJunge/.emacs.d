@@ -200,7 +200,19 @@
     ("SCCS" "RCS" "CVS" "MCVS" ".svn" ".git" ".hg" ".bzr" "_MTN" "_darcs" "{arch}" "migrations")))
  '(safe-local-variable-values
    (quote
-    ((project-venv-name . "heat")
+    ((python-django-project-settings . "settings.erwin")
+     (eval set
+           (make-local-variable
+            (quote python-django-project-root))
+           (file-name-directory
+            (let
+                ((d
+                  (dir-locals-find-file ".")))
+              (if
+                  (stringp d)
+                  d
+                (car d)))))
+     (project-venv-name . "heat")
      (project-venv-name . "scope-backend")
      (project-venv-name . "bacchi")
      (project-venv-name . "beebox")

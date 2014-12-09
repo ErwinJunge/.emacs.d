@@ -180,6 +180,9 @@
 ;; Django
 (require 'python-django)
 
+;; Lua
+(require 'lua-mode)
+
 ;; Custom
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

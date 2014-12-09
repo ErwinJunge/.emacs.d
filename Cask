@@ -17,3 +17,4 @@
 (depends-on "markdown-mode")
 (depends-on "virtualenvwrapper")
 (depends-on "python-django")
+(depends-on "lua-mode")

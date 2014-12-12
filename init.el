@@ -183,6 +183,9 @@
 ;; Lua
 (require 'lua-mode)
 
+;; Rust
+(require 'rust-mode)
+
 ;; Custom
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

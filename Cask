@@ -18,3 +18,4 @@
 (depends-on "virtualenvwrapper")
 (depends-on "python-django")
 (depends-on "lua-mode")
+(depends-on "rust-mode")

@@ -1,0 +1,15 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: number-of-x
+# key: nr
+# binding: direct-keybinding
+# --
+number_of_female_$1 = models.PositiveIntegerField(
+    default=0,
+)
+number_of_male_$1 = models.PositiveIntegerField(
+    default=0,
+)$0
+
+@denormalized(models.PositiveIntegerField, default=0)
+def number_of_$1(self):
+   return self.number_of_female_$1 + self.number_of_male_$1

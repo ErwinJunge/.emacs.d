@@ -20,3 +20,4 @@
 (depends-on "lua-mode")
 (depends-on "rust-mode")
 (depends-on "flx-ido")
+(depends-on "dockerfile-mode")

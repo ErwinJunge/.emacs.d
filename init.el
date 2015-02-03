@@ -218,7 +218,10 @@
     ("SCCS" "RCS" "CVS" "MCVS" ".svn" ".git" ".hg" ".bzr" "_MTN" "_darcs" "{arch}" "migrations")))
  '(safe-local-variable-values
    (quote
-    ((project-venv-name . "tutti-ricambi")
+    ((project-venv-name . "brandfighters")
+     (project-venv-name . "teg")
+     (project-venv-name . "ah_parser")
+     (project-venv-name . "tutti-ricambi")
      (python-django-project-settings . "settings.erwin")
      (eval set
            (make-local-variable

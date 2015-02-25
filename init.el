@@ -194,6 +194,9 @@
 (require 'icicles)
 (icy-mode 1)
 
+;; f5 to recompile (for testing in elpy)
+(global-set-key [f5] (quote recompile))
+
 ;; Custom
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

@@ -203,10 +203,14 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ansi-color-faces-vector
+   [default default default italic underline success warning error])
+ '(ansi-color-names-vector
+   ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
  '(case-fold-search nil)
  '(custom-safe-themes
    (quote
-    ("cd70962b469931807533f5ab78293e901253f5eeb133a46c2965359f23bfb2ea" "11d069fbfb0510e2b32a5787e26b762898c7e480364cbc0779fe841662e4cf5d" default)))
+    ("3c093ea152d7185cc78b61b05e52648c6d2fb0d8579c2119d775630fa459e0be" "cd70962b469931807533f5ab78293e901253f5eeb133a46c2965359f23bfb2ea" "11d069fbfb0510e2b32a5787e26b762898c7e480364cbc0779fe841662e4cf5d" default)))
  '(elpy-rpc-backend "jedi")
  '(elpy-rpc-timeout 10)
  '(elpy-test-django-runner-command
@@ -217,6 +221,10 @@
  '(grep-find-ignored-directories
    (quote
     ("SCCS" "RCS" "CVS" "MCVS" ".svn" ".git" ".hg" ".bzr" "_MTN" "_darcs" "{arch}" "migrations")))
+ '(indent-tabs-mode nil)
+ '(js-indent-level 2)
+ '(python-indent-guess-indent-offset t)
+ '(python-indent-offset 4)
  '(safe-local-variable-values
    (quote
     ((project-venv-name . "brandfighters")
@@ -264,12 +272,14 @@
      (320 . "#8CD0D3")
      (340 . "#94BFF3")
      (360 . "#DC8CC3"))))
- '(vc-annotate-very-old-color "#DC8CC3"))
+ '(vc-annotate-very-old-color "#DC8CC3")
+ '(yas-also-auto-indent-first-line nil)
+ '(yas-indent-line (quote auto)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(magit-blame-heading ((t (:background "grey25" :foreground "gold")))))
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)

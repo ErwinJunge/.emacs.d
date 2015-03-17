@@ -47,9 +47,11 @@
 
 ;; Theme
 ;; https://github.com/bbatsov/zenburn-emacs
-(load-theme 'zenburn t)
-(set-cursor-color "firebrick")
-(set-face-attribute 'default nil :height 100)
+;; (load-theme 'zenburn t)
+;; (set-cursor-color "firebrick")
+;; (set-face-attribute 'default nil :height 100)
+;; https://github.com/bbatsov/solarized-emacs
+(load-theme 'solarized-light t)
 
 ;; Don't show startup screen
 (setq inhibit-startup-screen t)
@@ -210,7 +212,7 @@
  '(case-fold-search nil)
  '(custom-safe-themes
    (quote
-    ("3c093ea152d7185cc78b61b05e52648c6d2fb0d8579c2119d775630fa459e0be" "cd70962b469931807533f5ab78293e901253f5eeb133a46c2965359f23bfb2ea" "11d069fbfb0510e2b32a5787e26b762898c7e480364cbc0779fe841662e4cf5d" default)))
+    ("d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "3c093ea152d7185cc78b61b05e52648c6d2fb0d8579c2119d775630fa459e0be" "cd70962b469931807533f5ab78293e901253f5eeb133a46c2965359f23bfb2ea" "11d069fbfb0510e2b32a5787e26b762898c7e480364cbc0779fe841662e4cf5d" default)))
  '(elpy-rpc-backend "jedi")
  '(elpy-rpc-timeout 10)
  '(elpy-test-django-runner-command
@@ -275,11 +277,5 @@
  '(vc-annotate-very-old-color "#DC8CC3")
  '(yas-also-auto-indent-first-line nil)
  '(yas-indent-line (quote auto)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(magit-blame-heading ((t (:background "grey25" :foreground "gold")))))
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)

@@ -7,6 +7,7 @@
 (depends-on "magit" :git "https://github.com/magit/magit.git" :branch "next")
 (depends-on "elpy")
 (depends-on "zenburn-theme")
+(depends-on "solarized-theme")
 (depends-on "web-mode")
 (depends-on "graphviz-dot-mode")
 (depends-on "fold-dwim")

@@ -22,3 +22,4 @@
 (depends-on "rust-mode")
 (depends-on "dockerfile-mode")
 (depends-on "icicles")
+(depends-on "kivy-mode")

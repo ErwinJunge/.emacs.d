@@ -196,6 +196,9 @@
 (require 'icicles)
 (icy-mode 1)
 
+;; kivy
+(require 'kivy-mode)
+
 ;; f5 to recompile (for testing in elpy)
 (global-set-key [f5] (quote recompile))
 

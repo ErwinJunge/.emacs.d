@@ -232,7 +232,9 @@
  '(python-indent-offset 4)
  '(safe-local-variable-values
    (quote
-    ((project-venv-name . "brandfighters")
+    ((project-venv-name . "qollap_chat_kivy")
+     (project-venv-name . "kivy")
+     (project-venv-name . "brandfighters")
      (project-venv-name . "teg")
      (project-venv-name . "ah_parser")
      (project-venv-name . "tutti-ricambi")

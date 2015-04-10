@@ -17,7 +17,6 @@
 ;; Tramp
 (require 'tramp)
 (set-default 'tramp-default-proxies-alist (quote ((".*" "\\`root\\'" "/ssh:%h:"))))
-(require 'tramp)
 (defun sudo-edit-current-file ()
   (interactive)
   (let ((position (point)))

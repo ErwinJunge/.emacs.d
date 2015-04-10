@@ -40,6 +40,7 @@
 (setq elpy-rpc--timeout 10)
 
 ;; Git
+(setq magit-last-seen-setup-instructions "1.4.0")
 (require 'magit)
 (eval-after-load 'magit
   (progn '(global-set-key (kbd "C-x g") 'magit-status)))

@@ -4,7 +4,7 @@
 (source org)
 
 (depends-on "cask")
-(depends-on "magit" :git "https://github.com/magit/magit.git" :branch "next")
+(depends-on "magit" :git "https://github.com/magit/magit.git" :ref "ff6c3b92446b87d80ec664faa6df47c1549ba09d")
 (depends-on "elpy")
 (depends-on "zenburn-theme")
 (depends-on "solarized-theme")

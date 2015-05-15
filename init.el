@@ -174,10 +174,12 @@
 (venv-initialize-interactive-shells) ;; if you want interactive shell support
 (venv-initialize-eshell) ;; if you want eshell support
 (setq venv-location "~/.virtualenvs/")
-(add-hook 'python-mode-hook (lambda ()
-                              (hack-local-variables)
-                              (when (boundp 'project-venv-name)
-                                (venv-workon project-venv-name))))
+(defun set-project-venv ()
+  (hack-local-variables)
+  (when (boundp 'project-venv-name)
+    (venv-workon project-venv-name)))
+(add-hook 'python-mode-hook 'set-project-venv)
+(add-hook 'buffer-list-update-hook 'set-project-venv)
 (setq-default mode-line-format (cons '(:exec venv-current-name) mode-line-format))
 
 ;; Horizontal split

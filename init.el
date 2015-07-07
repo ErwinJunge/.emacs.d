@@ -234,7 +234,8 @@
  '(python-indent-offset 4)
  '(safe-local-variable-values
    (quote
-    ((project-venv-name . "coach360")
+    ((project-venv-name . "agriplace")
+     (project-venv-name . "coach360")
      (project-venv-name . "qollap_chat_kivy")
      (project-venv-name . "kivy")
      (project-venv-name . "brandfighters")

@@ -44,6 +44,8 @@
 (require 'magit)
 (eval-after-load 'magit
   (progn '(global-set-key (kbd "C-x g") 'magit-status)))
+(require 'magit-gitflow)
+(add-hook 'magit-mode-hook 'turn-on-magit-gitflow)
 
 ;; Theme
 ;; https://github.com/bbatsov/zenburn-emacs

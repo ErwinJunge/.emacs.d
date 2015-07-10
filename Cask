@@ -5,6 +5,7 @@
 
 (depends-on "cask")
 (depends-on "magit")
+(depends-on "magit-gitflow")
 (depends-on "elpy")
 (depends-on "zenburn-theme")
 (depends-on "solarized-theme")

@@ -236,7 +236,9 @@
  '(python-indent-offset 4)
  '(safe-local-variable-values
    (quote
-    ((project-venv-name . "qollap-aac")
+    ((project-venv-name . "sepapi")
+     (project-venv-name . "sepa")
+     (project-venv-name . "qollap-aac")
      (project-venv-name . "agriplace")
      (project-venv-name . "coach360")
      (project-venv-name . "qollap_chat_kivy")

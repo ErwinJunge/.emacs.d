@@ -24,3 +24,6 @@
 (depends-on "dockerfile-mode")
 (depends-on "icicles")
 (depends-on "kivy-mode")
+(depends-on "clojure-mode")
+(depends-on "inf-clojure")
+(depends-on "cider")

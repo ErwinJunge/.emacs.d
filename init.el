@@ -131,6 +131,10 @@
 (require 'dockerfile-mode)
 (add-to-list 'auto-mode-alist '("Dockerfile\\'" . dockerfile-mode))
 
+;; Clojure
+(require 'clojure-mode)
+(require 'inf-clojure)
+
 ;; No bell
 (setq ring-bell-function 'ignore)
 

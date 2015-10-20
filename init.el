@@ -77,7 +77,7 @@
 (show-paren-mode +1)
 
 ;; Graphviz
-(require 'graphviz-dot-mode)
+;; (require 'graphviz-dot-mode)
 
 ;; Folding
 (require 'fold-dwim)

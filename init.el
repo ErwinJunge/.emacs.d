@@ -242,6 +242,7 @@
    (quote
     ((project-venv-name . "sepapi")
      (project-venv-name . "sepa")
+     (project-venv-name . "pony")
      (project-venv-name . "qollap-aac")
      (project-venv-name . "agriplace")
      (project-venv-name . "coach360")

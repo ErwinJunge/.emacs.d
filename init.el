@@ -135,6 +135,11 @@
 (require 'clojure-mode)
 (require 'inf-clojure)
 
+;; Move text easily
+(require 'move-text)
+(global-set-key [M-S-up] 'move-text-up)
+(global-set-key [M-S-down] 'move-text-down)
+
 ;; No bell
 (setq ring-bell-function 'ignore)
 

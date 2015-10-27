@@ -27,3 +27,4 @@
 (depends-on "clojure-mode")
 (depends-on "inf-clojure")
 (depends-on "cider")
+(depends-on "move-text")

@@ -253,7 +253,8 @@
  '(python-indent-offset 4)
  '(safe-local-variable-values
    (quote
-    ((project-venv-name . "sepapi")
+    ((project-venv-name . "sams")
+     (project-venv-name . "sepapi")
      (project-venv-name . "sepa")
      (project-venv-name . "pony")
      (project-venv-name . "qollap-aac")

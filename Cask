@@ -28,3 +28,5 @@
 (depends-on "inf-clojure")
 (depends-on "cider")
 (depends-on "move-text")
+(depends-on "projectile")
+(depends-on "helm")

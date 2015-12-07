@@ -282,7 +282,8 @@
  '(python-indent-offset 4)
  '(safe-local-variable-values
    (quote
-    ((project-venv-name . "sams")
+    ((project-venv-name . "django-rosetta")
+     (project-venv-name . "sams")
      (project-venv-name . "sepapi")
      (project-venv-name . "sepa")
      (project-venv-name . "pony")

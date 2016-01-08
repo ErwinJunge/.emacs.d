@@ -284,6 +284,7 @@
    (quote
     ((project-venv-name . "django-rosetta")
      (project-venv-name . "sams")
+     (project-venv-name . "django-websocket-redis")
      (project-venv-name . "sepapi")
      (project-venv-name . "sepa")
      (project-venv-name . "pony")

@@ -201,9 +201,6 @@
 (add-hook 'buffer-list-update-hook 'set-project-venv)
 (setq-default mode-line-format (cons '(:exec venv-current-name) mode-line-format))
 
-;; Horizontal split
-(setq split-width-threshold 130)
-
 ;; Django
 (require 'python-django)
 
@@ -251,6 +248,11 @@
 ;; Projectile
 (projectile-global-mode)
 (setq projectile-completion-system 'helm)
+
+;; Resizing windows
+(require 'golden-ratio)
+(golden-ratio-mode 1)
+(setq golden-ratio-auto-scale t)
 
 ;; Custom
 (custom-set-variables

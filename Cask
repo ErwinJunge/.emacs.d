@@ -30,3 +30,4 @@
 (depends-on "move-text")
 (depends-on "projectile")
 (depends-on "helm")
+(depends-on "golden-ratio")

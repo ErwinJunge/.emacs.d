@@ -64,7 +64,7 @@
 (setq web-mode-engines-alist
     '(("django"    . "\\.html\\'"))
 )
-(setq web-mode-markup-indent-offset 4)
+(setq web-mode-markup-indent-offset 2)
 
 ;; I hate tabs!
 (setq-default indent-tabs-mode nil)

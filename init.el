@@ -255,7 +255,9 @@
 (setq golden-ratio-auto-scale t)
 
 ;; Slack integration
-(erc-tls :server "stamkracht.irc.slack.com" :port 6667 :nick "erwin" :password nil)
+(defun slack ()
+  (interactive)
+  (erc-tls :server "stamkracht.irc.slack.com" :port 6667 :nick "erwin" :password nil))
 
 ;; Custom
 (custom-set-variables

@@ -79,9 +79,6 @@
 ;; Graphviz
 ;; (require 'graphviz-dot-mode)
 
-;; Folding
-(require 'fold-dwim)
-
 ;; Sass
 (require 'sass-mode)
 (defun sass-indent-p ()
@@ -260,6 +257,11 @@
   (erc-tls :server "stamkracht.irc.slack.com" :port 6667 :nick "erwin" :password nil))
 
 (setq erc-ignore-list '("SK_Dashboard" "Beanstalk" "SLACK"))
+
+;; Folding
+(require 'origami)
+(global-origami-mode 1)
+(global-set-key (kbd "C-<tab>") 'origami-recursively-toggle-node)
 
 ;; Custom
 (custom-set-variables

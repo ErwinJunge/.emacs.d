@@ -11,7 +11,6 @@
 (depends-on "solarized-theme")
 (depends-on "web-mode")
 (depends-on "graphviz-dot-mode")
-(depends-on "fold-dwim")
 (depends-on "sass-mode")
 (depends-on "quack")
 (depends-on "php-mode")
@@ -32,3 +31,4 @@
 (depends-on "helm")
 (depends-on "golden-ratio")
 (depends-on "systemd")
+(depends-on "origami")

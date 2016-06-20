@@ -263,6 +263,18 @@
 (global-origami-mode 1)
 (global-set-key (kbd "C-<tab>") 'origami-recursively-toggle-node)
 
+;; Copy filename
+(defun copy-filename-to-clipboard ()
+  "Copy the current buffer file name to the clipboard."
+  (interactive)
+  (let* ((filename (if (equal major-mode 'dired-mode)
+                      default-directory
+                    (buffer-file-name)))
+        (filename (format "%s:%d" filename (count-lines 1 (point)))))
+    (when filename
+      (kill-new filename)
+      (message "Copied buffer file name '%s' to the clipboard." filename))))
+
 ;; Custom
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

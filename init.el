@@ -200,6 +200,16 @@
 
 ;; Django
 (require 'python-django)
+(setq python-shell-prompt-detect-failure-warning nil)
+(defun runserver ()
+  (interactive)
+  (let* ((project-dir (dir-locals-find-file "."))
+         (project-dir (if (stringp project-dir)
+                          project-dir
+                        (car project-dir)))
+         (project-dir (file-name-directory project-dir)))
+    (if (get-process "Python") (delete-process "Python"))
+    (run-python (concat project-dir "manage.py runserver"))))
 
 ;; Lua
 (require 'lua-mode)

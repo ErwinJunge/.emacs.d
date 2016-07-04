@@ -303,7 +303,7 @@
  '(elpy-rpc-timeout 10)
  '(elpy-test-django-runner-command
    (quote
-    ("python" "-Wi" "manage.py" "test" "--noinput" "--settings=settings.settings_test")))
+    ("python" "-Wi" "manage.py" "test" "--noinput" "--settings=settings.settings_test" "--failfast")))
  '(elpy-test-runner (quote elpy-test-django-runner))
  '(fci-rule-color "#383838")
  '(grep-find-ignored-directories

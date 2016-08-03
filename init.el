@@ -286,6 +286,9 @@
       (kill-new filename)
       (message "Copied buffer file name '%s' to the clipboard." filename))))
 
+;; Rainbow parens
+(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+
 ;; Custom
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

@@ -32,3 +32,4 @@
 (depends-on "golden-ratio")
 (depends-on "systemd")
 (depends-on "origami")
+(depends-on "rainbow-delimiters")

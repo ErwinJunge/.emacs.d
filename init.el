@@ -351,6 +351,7 @@
      (project-venv-name . "bacchi")
      (project-venv-name . "beebox")
      (project-venv-name . "qollap")
+     (project-venv-name . "py-moneyed")
      (project-venv-name . "openict-erp")
      (project-venv-name . "dasboard-backend"))))
  '(show-paren-mode t)

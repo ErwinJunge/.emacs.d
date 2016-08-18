@@ -267,7 +267,7 @@
   (interactive)
   (erc-tls :server "stamkracht.irc.slack.com" :port 6667 :nick "erwin" :password nil))
 
-(setq erc-ignore-list '("SK_Dashboard" "Beanstalk" "SLACK"))
+(setq erc-ignore-list '("SK_Dashboard" "Beanstalk" "SLACK" "Nagios"))
 
 ;; Folding
 (require 'origami)

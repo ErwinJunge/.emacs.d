@@ -8,6 +8,9 @@
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
 
+;; beacon (blink cursor)
+(beacon-mode 1)
+
 ;; Quack (racket)
 (require 'quack)
 

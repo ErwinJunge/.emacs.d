@@ -33,3 +33,4 @@
 (depends-on "systemd")
 (depends-on "origami")
 (depends-on "rainbow-delimiters")
+(depends-on "beacon")

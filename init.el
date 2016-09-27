@@ -358,6 +358,7 @@
      (project-venv-name . "openict-erp")
      (project-venv-name . "stamkracht")
      (project-venv-name . "cliqc-web")
+     (project-venv-name . "beanstalk-pubsub")
      (project-venv-name . "dasboard-backend"))))
  '(show-paren-mode t)
  '(tool-bar-mode nil)

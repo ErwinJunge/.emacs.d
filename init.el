@@ -321,6 +321,9 @@
     ("SCCS" "RCS" "CVS" "MCVS" ".svn" ".git" ".hg" ".bzr" "_MTN" "_darcs" "{arch}" "migrations")))
  '(indent-tabs-mode nil)
  '(js-indent-level 2)
+ '(package-selected-packages
+   (quote
+    (emojify zenburn-theme yaml-mode web-mode virtualenvwrapper systemd swiper-helm solarized-theme sass-mode rust-mode rainbow-delimiters quack python-django projectile php-mode origami move-text markdown-mode magit-gitflow lua-mode kivy-mode inf-clojure icicles graphviz-dot-mode golden-ratio elpy dockerfile-mode cider cask beacon)))
  '(python-indent-guess-indent-offset t)
  '(python-indent-offset 4)
  '(safe-local-variable-values

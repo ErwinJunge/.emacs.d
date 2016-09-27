@@ -292,6 +292,9 @@
 ;; Rainbow parens
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
+;; Stop pinging stuff please
+(setq ffap-machine-p-known 'reject)
+
 ;; Custom
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

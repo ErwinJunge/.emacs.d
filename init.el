@@ -8,6 +8,10 @@
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
 
+;; emoji
+(require 'emojify)
+(add-hook 'after-init-hook #'global-emojify-mode)
+
 ;; beacon (blink cursor)
 (beacon-mode 1)
 

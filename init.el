@@ -145,13 +145,9 @@
 (global-set-key [M-S-up] 'move-text-up)
 (global-set-key [M-S-down] 'move-text-down)
 
-;; Swiper/ivy
-(ivy-mode 1)
-(setq ivy-use-virtual-buffers t)
-(global-set-key "\C-s" 'swiper)
-(global-set-key "\C-r" 'swiper)
-(global-set-key (kbd "C-c C-r") 'ivy-resume)
-(global-set-key [f6] 'ivy-resume)
+;; Swiper
+(require 'swiper-helm)
+(global-set-key "\C-s" 'swiper-helm)
 
 ;; No bell
 (setq ring-bell-function 'ignore)

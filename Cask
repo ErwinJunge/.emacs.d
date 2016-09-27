@@ -34,4 +34,5 @@
 (depends-on "origami")
 (depends-on "rainbow-delimiters")
 (depends-on "beacon")
+(depends-on "swiper-helm")
 (depends-on "emojify")
